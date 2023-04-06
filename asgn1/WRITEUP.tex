@@ -1,0 +1,56 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{amsmath}
+\title{WRITEUP ASGN1}
+\author{Cruzid: acristea}
+\date{January 2023 - CSE13S}
+
+\begin{document}
+
+\maketitle
+
+\section{Bash Scripting} 
+\textbf{For Loop -} 
+To start, I used a for loop which I made iterate 1000 times to generate my data. Each data came with an iteration count, an estimated pi value, an x-value and y-value, and a 0 or 1 depending on if it was in the circles area or not. 
+\begin{itemize}
+    \item I used the \href{https://folk.ntnu.no/geirha/bashguide.pdf}{Bash Guide} specifically chapter 6.5 and the intro to for loops on the asgn1 pdf to help me with this. 
+\end{itemize}
+\textbf{Awk Command -} The awk command allows me to manipulate data in files. I used this specifically for plot 2, when specifying the column of data I wanted to subtract by pi to get my error estimation. \\
+\\
+\textbf{Print Command -} The print command works in a similar way to echo, it simply shows/writes the data
+\section{gnuplot}
+
+
+Gnuplot involved lots of trial and error. Using the \href{http://gnuplot.info/docs_5.5/Commands.html}{gnuplot manual} and looking at the index of commands helped a lot.\\
+\\
+\textbf{Useful Commands:}
+\begin{itemize}
+    \item output - Naming your file
+    \item title - Creating a title for your graph
+    \item xlabel and ylabel - Naming your x-axis and y-axis
+    \item palette - Allows you to give color to your data (0 "red", 1 "blue") if the data column is 0, show red, if 1 show blue
+    \item object - Allows you to set an object type, in my case a circle, based on coordinates given
+    \item logscale - Scales your data on an axis by a specified amount
+    \item grid - Creates a grid on the graph
+    \item plot - Used to plot lines on the graph, can specify color and create a title inside if need be
+\end{itemize}
+\section{Plots}
+
+\includegraphics{monte_carlo.pdf}
+Using Monte Carlo Estimation, the ratio of the number of points in the quadrant to the number of points in the square is the ratio of the two areas
+\begin{itemize}
+    \item Area of Square with sides l is l*l
+    \item Area of a quadrant of a circle with radius l is (pi * l*l)/4
+    \item The ratio of these areas is pi/4
+\end{itemize}
+This plot shows points uniformly scattered in a square, and measures
+the number of points that fall within the quadrant (distance from origin less than or equal to 1) and the other points. The more points I have in the circle, the more accurate the pi estimation will be.
+
+\includegraphics{monte_carlo2.pdf}
+This graph calculates the value of the difference between the estimated pi and pi along a certain amount of iterations. The different colors represent different seeds for the random number generator. As you can see, the more iterations we do (meaning the more points we plot like in the plot above) the closer we will be to the exact value of pi.\\
+\section{Conclusion}
+In conclusion, I learned how to create a bash file, understand the basics of bash commands, and redirect files in bash to make graphs using gnuplot documentation. This will further my analysis skills in the future and allow me to further understand specific data files.
+\end{document}
