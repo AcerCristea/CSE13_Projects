@@ -1,0 +1,6 @@
+ok 1 - test_word.c:word_tests:test_wt_create: Passed
+ok 2 - test_word.c:word_tests:test_word_create: Passed
+ok 3 - test_word.c:word_tests:test_word_append_sym: Passed
+ok 4 - test_word.c:word_tests:test_wt_reset: Passed
+ok 5 - test_word.c:word_tests:test_word_delete: Passed
+1..5

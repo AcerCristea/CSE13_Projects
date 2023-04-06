@@ -1,0 +1,7 @@
+ok 1 - test_io.c:io_tests:test_header_read_write: Passed
+ok 2 - test_io.c:io_tests:test_read_bytes: Passed
+ok 3 - test_io.c:io_tests:test_write_bytes: Passed
+ok 4 - test_io.c:io_tests:test_read_pair: Passed
+ok 5 - test_io.c:io_tests:test_write_pair: Passed
+ok 6 - test_io.c:io_tests:test_write_word: Passed
+1..6

@@ -1,0 +1,12 @@
+Nityam Thakur
+Student in India
+
+Greetings, I’m Nityam. I’m a student studying in Step By Step School Noida, India. I am an aspiring Game Programmer and I take my biggest passion in Computer Science. You can visit GitHub with a click on the button above.
+
+My primary topics of Computer Science include AI, Machine Learning, and Game Programming. I like to code in many languages such as Python, C++ and I enjoy managing and using DBMS software such as MySQL.
+
+I like to create games on Unity and Love2D. I like to explore how I can implement various modern methods of programming, such as Machine Learning, into games. I wish to pursue Game Dev as a career in the future.
+
+I’m also a passionate drummer, soccer player, and am very fond of animals.
+about.me
+

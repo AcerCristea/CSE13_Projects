@@ -1,0 +1,6 @@
+ok 1 - test_trie.c:trie_tests:test_trie_create: Passed
+ok 2 - test_trie.c:trie_tests:test_trie_node_create: Passed
+ok 3 - test_trie.c:trie_tests:test_trie_node_delete: Passed
+ok 4 - test_trie.c:trie_tests:test_trie_step: Passed
+ok 5 - test_trie.c:trie_tests:test_trie_reset: Passed
+1..5
